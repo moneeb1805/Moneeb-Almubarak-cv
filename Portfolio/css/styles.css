@@ -481,7 +481,7 @@ body.nav-open { overflow: hidden; }
 
 /* Info grid */
 .info-grid {
-  display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem;
+  display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem;
 }
 .info-card {
   padding: 1.35rem; border-radius: 20px;
@@ -498,6 +498,60 @@ body.nav-open { overflow: hidden; }
 .about-list span, .about-list a { color: var(--muted); font-size: 0.85rem; }
 .about-list a:hover { color: var(--accent-2); }
 .skill-cloud { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+
+/* Skills section */
+.skills-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.skill-group {
+  padding: 1.2rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: rgba(17,24,39,.72);
+}
+.skill-group h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.95rem;
+  color: var(--accent-2);
+}
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 0.65rem;
+}
+.skill-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  border-radius: 14px;
+  border: 1px solid rgba(148,163,184,.12);
+  background: rgba(7,11,18,.45);
+  transition: transform .2s var(--ease), border-color .2s, background .2s;
+}
+.skill-chip:hover {
+  transform: translateY(-2px);
+  border-color: rgba(96,165,250,.35);
+  background: rgba(59,130,246,.08);
+}
+.skill-chip img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.skill-chip span {
+  color: var(--soft);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 .exp-list { display: grid; gap: 1.15rem; }
 .exp-head {
   display: flex; justify-content: space-between; gap: 0.7rem; margin-bottom: 0.45rem;
@@ -571,7 +625,7 @@ body.nav-open { overflow: hidden; }
 }
 
 @media (max-width: 980px) {
-  .hero-grid, .info-grid { grid-template-columns: 1fr; }
+  .hero-grid, .info-grid, .skills-groups { grid-template-columns: 1fr; }
   .portrait-stage { justify-content: start; max-width: 520px; }
   .nav-links, .btn-nav { display: none; }
   .nav-toggle { display: grid; }
@@ -592,6 +646,7 @@ body.nav-open { overflow: hidden; }
   .section-row { flex-direction: column; align-items: start; }
   .case-meta > div { grid-template-columns: 1fr; gap: 0.25rem; }
   .nav-links a { padding: 0.5rem 0.55rem; font-size: 0.86rem; }
+  .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
 @media (max-width: 420px) {
