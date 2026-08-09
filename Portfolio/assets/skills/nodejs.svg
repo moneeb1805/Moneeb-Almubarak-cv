@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-hidden="true">
+<rect width="64" height="64" rx="12" fill="#0B1220"/><path fill="#339933" d="M32 10 14 20v24l18 10 18-10V20L32 10zm0 6.2 12.5 7v13.6L32 44l-12.5-7.2V23.2L32 16.2z"/><path fill="#339933" d="M31 25h2.5v10.2c0 2.8-1.5 4.3-4.2 4.3-2.4 0-3.8-1.2-4.5-2.8l2.2-1.3c.4.9 1 1.5 2 1.5.9 0 1.5-.5 1.5-1.8V25h.5z"/>
+</svg>
