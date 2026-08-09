@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="false"><title>Network digital twin concept</title>
+
+  <rect width="640" height="400" fill="#0a1220"/>
+  <rect x="24" y="24" width="592" height="352" rx="16" fill="#0f172a" stroke="#1e293b"/>
+  <text x="48" y="58" font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="600" fill="#60a5fa">Digital Twin · Network Performance</text>
+  <!-- twin panes -->
+  <rect x="48" y="80" width="250" height="200" rx="12" fill="#111827" stroke="#243044"/>
+  <text x="64" y="106" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#64748b">Physical model</text>
+  <circle cx="120" cy="170" r="16" fill="#1e293b" stroke="#3b82f6"/>
+  <circle cx="200" cy="150" r="12" fill="#1e293b" stroke="#60a5fa"/>
+  <circle cx="180" cy="220" r="14" fill="#1e293b" stroke="#22d3ee"/>
+  <line x1="120" y1="170" x2="200" y2="150" stroke="#3b82f6" stroke-width="1.5" opacity=".6"/>
+  <line x1="120" y1="170" x2="180" y2="220" stroke="#60a5fa" stroke-width="1.5" opacity=".6"/>
+  <line x1="200" y1="150" x2="180" y2="220" stroke="#22d3ee" stroke-width="1.5" opacity=".5"/>
+  <rect x="342" y="80" width="250" height="200" rx="12" fill="#111827" stroke="#243044"/>
+  <text x="358" y="106" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#64748b">Simulated twin</text>
+  <circle cx="414" cy="170" r="16" fill="#0b1528" stroke="#93c5fd" stroke-dasharray="4 3"/>
+  <circle cx="494" cy="150" r="12" fill="#0b1528" stroke="#60a5fa" stroke-dasharray="4 3"/>
+  <circle cx="474" cy="220" r="14" fill="#0b1528" stroke="#22d3ee" stroke-dasharray="4 3"/>
+  <line x1="414" y1="170" x2="494" y2="150" stroke="#93c5fd" stroke-width="1.5" opacity=".7" stroke-dasharray="5 4"/>
+  <line x1="414" y1="170" x2="474" y2="220" stroke="#60a5fa" stroke-width="1.5" opacity=".7" stroke-dasharray="5 4"/>
+  <line x1="494" y1="150" x2="474" y2="220" stroke="#22d3ee" stroke-width="1.5" opacity=".6" stroke-dasharray="5 4"/>
+  <!-- sync arrow -->
+  <path d="M310 170 H330" stroke="#3b82f6" stroke-width="2"/>
+  <path d="M330 170 H310" stroke="#60a5fa" stroke-width="2" transform="translate(0 20)"/>
+  <!-- monitoring panels -->
+  <rect x="48" y="298" width="170" height="54" rx="10" fill="#111827" stroke="#243044"/>
+  <text x="64" y="320" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#94a3b8">Latency</text>
+  <rect x="64" y="330" width="130" height="8" rx="4" fill="#1e293b"/>
+  <rect x="64" y="330" width="78" height="8" rx="4" fill="#3b82f6"/>
+  <rect x="234" y="298" width="170" height="54" rx="10" fill="#111827" stroke="#243044"/>
+  <text x="250" y="320" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#94a3b8">Throughput</text>
+  <rect x="250" y="330" width="130" height="8" rx="4" fill="#1e293b"/>
+  <rect x="250" y="330" width="100" height="8" rx="4" fill="#22d3ee"/>
+  <rect x="420" y="298" width="172" height="54" rx="10" fill="#111827" stroke="#243044"/>
+  <text x="436" y="320" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#94a3b8">Predictive signal</text>
+  <polyline points="436,340 456,336 476,342 496,328 516,332 536,322 556,326" fill="none" stroke="#60a5fa" stroke-width="2"/>
+
+</svg>

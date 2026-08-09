@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 360" role="img" aria-hidden="false"><title>Profile mobile app concept</title>
+
+  <rect width="240" height="360" rx="28" fill="#0b1220"/>
+  <rect x="10" y="10" width="220" height="340" rx="22" fill="#111827" stroke="#1e293b"/>
+  <rect x="88" y="20" width="64" height="8" rx="4" fill="#334155"/>
+  <rect x="22" y="42" width="196" height="280" rx="12" fill="#0a1220"/>
+  
+    <circle cx="120" cy="100" r="30" fill="#1e293b" stroke="#60a5fa"/>
+    <rect x="70" y="148" width="100" height="10" rx="5" fill="#64748b"/>
+    <rect x="50" y="176" width="140" height="14" rx="7" fill="#1e293b"/>
+    <rect x="50" y="176" width="90" height="14" rx="7" fill="#3b82f6"/>
+    <rect x="50" y="206" width="140" height="14" rx="7" fill="#1e293b"/>
+    <rect x="50" y="206" width="60" height="14" rx="7" fill="#60a5fa" opacity=".7"/>
+    <rect x="50" y="246" width="64" height="40" rx="10" fill="#111827" stroke="#243044"/>
+    <rect x="126" y="246" width="64" height="40" rx="10" fill="#111827" stroke="#243044"/>
+  
+  <text x="120" y="340" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#60a5fa">Profile</text>
+
+</svg>

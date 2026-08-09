@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="false"><title>XR network monitoring concept</title>
+
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="48%" r="40%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#0a1220" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="400" fill="#05090f"/>
+  <rect width="640" height="400" fill="url(#glow)"/>
+  <!-- grid -->
+  <g stroke="#122033" stroke-width="1">
+    <path d="M0 80 H640 M0 160 H640 M0 240 H640 M0 320 H640"/>
+    <path d="M80 0 V400 M160 0 V400 M240 0 V400 M320 0 V400 M400 0 V400 M480 0 V400 M560 0 V400"/>
+  </g>
+  <text x="32" y="40" font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="600" fill="#60a5fa">XR Network Topology</text>
+  <text x="32" y="58" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#64748b">Conceptual visualization</text>
+  <!-- links -->
+  <g stroke="#3b82f6" stroke-width="1.5" opacity=".55">
+    <line x1="320" y1="200" x2="140" y2="110"/>
+    <line x1="320" y1="200" x2="500" y2="110"/>
+    <line x1="320" y1="200" x2="110" y2="280"/>
+    <line x1="320" y1="200" x2="530" y2="280"/>
+    <line x1="320" y1="200" x2="220" y2="330"/>
+    <line x1="320" y1="200" x2="420" y2="330"/>
+    <line x1="320" y1="200" x2="320" y2="80"/>
+  </g>
+  <!-- traffic pulses -->
+  <circle cx="230" cy="155" r="4" fill="#22d3ee"/>
+  <circle cx="410" cy="155" r="3.5" fill="#60a5fa"/>
+  <circle cx="215" cy="240" r="3" fill="#34d399"/>
+  <circle cx="430" cy="250" r="4" fill="#22d3ee"/>
+  <!-- central router -->
+  <circle cx="320" cy="200" r="36" fill="#0b1528" stroke="#60a5fa" stroke-width="2"/>
+  <circle cx="320" cy="200" r="22" fill="#111827" stroke="#3b82f6"/>
+  <rect x="308" y="188" width="24" height="24" rx="5" fill="#1e3a8a"/>
+  <circle cx="320" cy="200" r="4" fill="#93c5fd"/>
+  <!-- devices -->
+  <g>
+    <rect x="112" y="90" width="56" height="40" rx="8" fill="#111827" stroke="#3b82f6"/>
+    <rect x="472" y="90" width="56" height="40" rx="8" fill="#111827" stroke="#60a5fa"/>
+    <rect x="82" y="260" width="56" height="40" rx="8" fill="#111827" stroke="#22d3ee"/>
+    <rect x="502" y="260" width="56" height="40" rx="8" fill="#111827" stroke="#34d399"/>
+    <circle cx="220" cy="330" r="18" fill="#111827" stroke="#3b82f6"/>
+    <circle cx="420" cy="330" r="18" fill="#111827" stroke="#60a5fa"/>
+    <rect x="296" y="52" width="48" height="28" rx="8" fill="#111827" stroke="#93c5fd"/>
+  </g>
+  <!-- HUD panels -->
+  <rect x="24" y="300" width="120" height="76" rx="10" fill="rgba(15,23,42,.85)" stroke="#1e293b"/>
+  <rect x="36" y="316" width="70" height="6" rx="3" fill="#334155"/>
+  <rect x="36" y="332" width="96" height="6" rx="3" fill="#3b82f6" opacity=".7"/>
+  <rect x="36" y="348" width="54" height="6" rx="3" fill="#22d3ee" opacity=".6"/>
+  <rect x="496" y="300" width="120" height="76" rx="10" fill="rgba(15,23,42,.85)" stroke="#1e293b"/>
+  <text x="512" y="326" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#94a3b8">Live traffic</text>
+  <rect x="512" y="338" width="88" height="8" rx="4" fill="#1e293b"/>
+  <rect x="512" y="338" width="58" height="8" rx="4" fill="#22d3ee"/>
+  <rect x="512" y="354" width="88" height="8" rx="4" fill="#1e293b"/>
+  <rect x="512" y="354" width="40" height="8" rx="4" fill="#3b82f6"/>
+
+</svg>
