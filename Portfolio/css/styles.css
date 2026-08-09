@@ -454,7 +454,7 @@ body.nav-open { overflow: hidden; }
 
 /* Apps */
 .apps-row {
-  display: grid; grid-template-columns: repeat(8, minmax(0,1fr)); gap: 0.8rem;
+  display: grid; grid-template-columns: repeat(7, minmax(0,1fr)); gap: 0.8rem;
 }
 .app-item {
   text-align: center; padding: 0.85rem 0.55rem; border-radius: 16px;
