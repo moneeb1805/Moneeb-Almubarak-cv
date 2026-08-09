@@ -7,6 +7,7 @@
   const mobileNav = document.querySelector(".mobile-nav");
   const portraitImg = document.getElementById("profile-image");
   const portraitFallback = document.getElementById("portrait-fallback");
+  const navLinks = document.querySelectorAll(".nav-links a");
 
   const hideLoader = () => {
     if (!loader) return;
@@ -15,23 +16,17 @@
   };
 
   const scheduleHide = () => window.setTimeout(hideLoader, 350);
-
-  if (document.readyState === "complete") {
-    scheduleHide();
-  } else {
+  if (document.readyState === "complete") scheduleHide();
+  else {
     window.addEventListener("load", scheduleHide, { once: true });
-    document.addEventListener("DOMContentLoaded", () => {
-      window.setTimeout(hideLoader, 1200);
-    }, { once: true });
+    document.addEventListener("DOMContentLoaded", () => window.setTimeout(hideLoader, 1200), { once: true });
   }
-
   window.setTimeout(hideLoader, 1800);
 
   const onScroll = () => {
     if (!header) return;
     header.classList.toggle("is-scrolled", window.scrollY > 12);
   };
-
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
@@ -63,17 +58,31 @@
       portraitImg.style.display = "none";
       portraitFallback.classList.add("is-visible");
     };
-
-    if (portraitImg.complete) {
-      if (portraitImg.naturalWidth === 0) showFallback();
-    } else {
-      portraitImg.addEventListener("error", showFallback);
-    }
+    portraitImg.addEventListener("error", showFallback);
+    if (portraitImg.complete && portraitImg.naturalWidth === 0) showFallback();
   }
+
+  const sections = ["about", "projects", "apps", "experience", "skills", "contact"]
+    .map((id) => document.getElementById(id))
+    .filter(Boolean);
+
+  const setActiveNav = () => {
+    let current = "top";
+    const y = window.scrollY + 120;
+    sections.forEach((section) => {
+      if (section.offsetTop <= y) current = section.id;
+    });
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href") || "";
+      const id = href.replace("#", "") || "top";
+      link.classList.toggle("is-active", id === current || (current === "top" && href === "#top"));
+    });
+  };
+  window.addEventListener("scroll", setActiveNav, { passive: true });
+  setActiveNav();
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const revealItems = document.querySelectorAll(".reveal");
-
   if (reduceMotion || !("IntersectionObserver" in window)) {
     revealItems.forEach((el) => el.classList.add("is-visible"));
   } else {
@@ -85,9 +94,8 @@
           observer.unobserve(entry.target);
         });
       },
-      { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.14, rootMargin: "0px 0px -8% 0px" }
     );
-
     revealItems.forEach((el) => observer.observe(el));
   }
 
