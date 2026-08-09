@@ -62,7 +62,7 @@
     if (portraitImg.complete && portraitImg.naturalWidth === 0) showFallback();
   }
 
-  const sections = ["about", "projects", "apps", "experience", "skills", "contact"]
+  const sections = ["about", "projects", "case-studies", "apps", "experience", "skills", "contact"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 

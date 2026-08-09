@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 120" role="img" aria-hidden="false"><title>AI private project category concept</title>
+
+  <rect width="150" height="120" rx="14" fill="#0a1220"/>
+  <rect x="1" y="1" width="148" height="118" rx="13" fill="none" stroke="#1e293b"/>
+  <circle cx="75" cy="60" r="22" fill="#111827" stroke="#60a5fa"/><circle cx="75" cy="60" r="8" fill="#3b82f6"/><circle cx="40" cy="40" r="6" fill="#1e293b" stroke="#94a3b8"/><circle cx="110" cy="40" r="6" fill="#1e293b" stroke="#94a3b8"/><circle cx="40" cy="85" r="6" fill="#1e293b" stroke="#94a3b8"/><circle cx="110" cy="85" r="6" fill="#1e293b" stroke="#94a3b8"/><line x1="53" y1="48" x2="46" y2="44" stroke="#334155"/><line x1="97" y1="48" x2="104" y2="44" stroke="#334155"/><line x1="53" y1="72" x2="46" y2="80" stroke="#334155"/><line x1="97" y1="72" x2="104" y2="80" stroke="#334155"/>
+  <text x="16" y="108" font-family="IBM Plex Sans,sans-serif" font-size="10" fill="#60a5fa">PRIVATE</text>
+
+</svg>
