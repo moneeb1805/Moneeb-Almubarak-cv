@@ -708,6 +708,55 @@ body.nav-open {
   background: var(--accent);
 }
 
+/* ---------- Education ---------- */
+.education-card {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.4rem 1.35rem;
+  border: 1px solid var(--border);
+  background: rgba(16, 24, 38, 0.5);
+  transition: border-color 0.2s ease;
+}
+
+.education-card:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+.education-meta {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.education-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.education-major {
+  margin: 0.35rem 0 0.2rem;
+  color: var(--accent-2);
+  font-size: 0.95rem;
+}
+
+.education-minor {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  margin-bottom: 0.9rem;
+}
+
+.education-coursework .fact-label {
+  margin-bottom: 0.35rem;
+}
+
+.education-coursework {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 /* ---------- Projects ---------- */
 .projects-grid {
   display: grid;
@@ -1227,7 +1276,8 @@ body.nav-open {
     grid-template-rows: 180px auto;
   }
 
-  .job {
+  .job,
+  .education-card {
     grid-template-columns: 1fr;
     gap: 0.55rem;
   }
