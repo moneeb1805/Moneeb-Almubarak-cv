@@ -333,7 +333,7 @@ button {
 .mobile-nav {
   position: fixed;
   inset: var(--nav-h) 0 0 0;
-  z-index: 999;
+  z-index: 1100;
   display: flex;
   flex-direction: column;
   gap: 0.35rem;

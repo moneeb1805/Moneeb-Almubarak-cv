@@ -14,11 +14,18 @@
     document.body.classList.remove("is-loading");
   };
 
-  window.addEventListener("load", () => {
-    window.setTimeout(hideLoader, 450);
-  });
+  const scheduleHide = () => window.setTimeout(hideLoader, 350);
 
-  window.setTimeout(hideLoader, 2200);
+  if (document.readyState === "complete") {
+    scheduleHide();
+  } else {
+    window.addEventListener("load", scheduleHide, { once: true });
+    document.addEventListener("DOMContentLoaded", () => {
+      window.setTimeout(hideLoader, 1200);
+    }, { once: true });
+  }
+
+  window.setTimeout(hideLoader, 1800);
 
   const onScroll = () => {
     if (!header) return;
