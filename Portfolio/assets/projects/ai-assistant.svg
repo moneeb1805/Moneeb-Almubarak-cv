@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="false"><title>AI customer support assistant concept</title>
+  <defs>
+    <radialGradient id="glow" cx="30%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".32"/>
+      <stop offset="100%" stop-color="#0a1220" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="#05090f"/>
+  <rect width="640" height="400" fill="url(#glow)"/>
+  <g stroke="#122033" stroke-width="1">
+    <path d="M0 80 H640 M0 160 H640 M0 240 H640 M0 320 H640"/>
+    <path d="M80 0 V400 M160 0 V400 M240 0 V400 M320 0 V400 M400 0 V400 M480 0 V400 M560 0 V400"/>
+  </g>
+  <text x="32" y="40" font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="600" fill="#60a5fa">AI Support Assistant</text>
+  <text x="32" y="58" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#64748b">Query handling &#183; Ticket routing</text>
+
+  <!-- chat panel -->
+  <rect x="32" y="84" width="300" height="284" rx="16" fill="#0b1528" stroke="#1e3a8a"/>
+  <rect x="32" y="84" width="300" height="40" rx="16" fill="#111827"/>
+  <circle cx="58" cy="104" r="9" fill="url(#core)"/>
+  <text x="74" y="108" font-family="IBM Plex Sans,sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">Assistant</text>
+  <circle cx="306" cy="104" r="4" fill="#34d399"/>
+
+  <!-- user bubbles -->
+  <rect x="148" y="140" width="168" height="34" rx="12" fill="#1f2937"/>
+  <rect x="164" y="152" width="120" height="4" rx="2" fill="#94a3b8"/>
+  <rect x="164" y="162" width="72" height="4" rx="2" fill="#64748b"/>
+
+  <!-- assistant bubbles -->
+  <rect x="48" y="186" width="200" height="48" rx="12" fill="url(#bubble)"/>
+  <rect x="64" y="200" width="150" height="4" rx="2" fill="#dbeafe"/>
+  <rect x="64" y="210" width="120" height="4" rx="2" fill="#bfdbfe"/>
+  <rect x="64" y="220" width="90" height="4" rx="2" fill="#bfdbfe"/>
+
+  <rect x="148" y="246" width="168" height="34" rx="12" fill="#1f2937"/>
+  <rect x="164" y="258" width="130" height="4" rx="2" fill="#94a3b8"/>
+  <rect x="164" y="268" width="56" height="4" rx="2" fill="#64748b"/>
+
+  <rect x="48" y="292" width="150" height="34" rx="12" fill="url(#bubble)"/>
+  <circle cx="72" cy="309" r="3" fill="#dbeafe"/>
+  <circle cx="86" cy="309" r="3" fill="#bfdbfe"/>
+  <circle cx="100" cy="309" r="3" fill="#93c5fd"/>
+
+  <rect x="48" y="338" width="268" height="20" rx="10" fill="#111827" stroke="#1e293b"/>
+  <rect x="60" y="347" width="120" height="3" rx="1.5" fill="#475569"/>
+
+  <!-- routing graph -->
+  <g stroke="#3b82f6" stroke-width="1.5" opacity=".6">
+    <line x1="332" y1="226" x2="420" y2="226"/>
+    <line x1="470" y1="226" x2="540" y2="140"/>
+    <line x1="470" y1="226" x2="540" y2="226"/>
+    <line x1="470" y1="226" x2="540" y2="312"/>
+  </g>
+  <circle cx="445" cy="226" r="26" fill="#0b1528" stroke="#60a5fa" stroke-width="2"/>
+  <circle cx="445" cy="226" r="14" fill="url(#core)"/>
+  <path d="M439 226 h12 M445 220 v12" stroke="#05090f" stroke-width="2.4" stroke-linecap="round"/>
+  <text x="445" y="270" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="10" fill="#94a3b8">Intent classifier</text>
+
+  <g font-family="IBM Plex Sans,sans-serif" font-size="10">
+    <rect x="540" y="122" width="76" height="36" rx="9" fill="#111827" stroke="#34d399"/>
+    <text x="578" y="144" text-anchor="middle" fill="#a7f3d0">Billing</text>
+    <rect x="540" y="208" width="76" height="36" rx="9" fill="#111827" stroke="#60a5fa"/>
+    <text x="578" y="230" text-anchor="middle" fill="#bfdbfe">Support</text>
+    <rect x="540" y="294" width="76" height="36" rx="9" fill="#111827" stroke="#22d3ee"/>
+    <text x="578" y="316" text-anchor="middle" fill="#a5f3fc">Projects</text>
+  </g>
+
+  <!-- KPI pills -->
+  <g font-family="IBM Plex Sans,sans-serif" font-size="10" fill="#94a3b8">
+    <rect x="352" y="90" width="118" height="28" rx="8" fill="#0b1528" stroke="#1e3a8a"/>
+    <text x="364" y="108">Auto-routing &#183; on</text>
+    <rect x="352" y="332" width="150" height="28" rx="8" fill="#0b1528" stroke="#1e3a8a"/>
+    <text x="364" y="350">Ticket queue &#183; balanced</text>
+  </g>
+</svg>

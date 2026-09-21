@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-hidden="false"><title>Real-time role-based messaging system concept</title>
+  <defs>
+    <radialGradient id="glow" cx="70%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#0a1220" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="#05090f"/>
+  <rect width="640" height="400" fill="url(#glow)"/>
+  <g stroke="#122033" stroke-width="1">
+    <path d="M0 80 H640 M0 160 H640 M0 240 H640 M0 320 H640"/>
+    <path d="M80 0 V400 M160 0 V400 M240 0 V400 M320 0 V400 M400 0 V400 M480 0 V400 M560 0 V400"/>
+  </g>
+  <text x="32" y="40" font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="600" fill="#60a5fa">Real-Time Messaging</text>
+  <text x="32" y="58" font-family="IBM Plex Sans,sans-serif" font-size="11" fill="#64748b">Role-based channels &#183; File sharing &#183; Chat history</text>
+
+  <!-- socket hub -->
+  <circle cx="320" cy="210" r="44" fill="#0b1528" stroke="#60a5fa" stroke-width="2"/>
+  <circle cx="320" cy="210" r="28" fill="#111827" stroke="#3b82f6"/>
+  <path d="M306 210 q7 -12 14 0 t14 0" stroke="#22d3ee" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  <text x="320" y="270" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="10" fill="#94a3b8">WebSocket hub</text>
+
+  <!-- connections -->
+  <g stroke="url(#wire)" stroke-width="1.6" opacity=".7" stroke-dasharray="6 5">
+    <line x1="276" y1="210" x2="150" y2="130"/>
+    <line x1="276" y1="210" x2="150" y2="300"/>
+    <line x1="364" y1="210" x2="490" y2="130"/>
+    <line x1="364" y1="210" x2="490" y2="300"/>
+  </g>
+  <circle cx="220" cy="175" r="3.5" fill="#22d3ee"/>
+  <circle cx="430" cy="252" r="3.5" fill="#60a5fa"/>
+  <circle cx="215" cy="252" r="3" fill="#34d399"/>
+  <circle cx="425" cy="170" r="3" fill="#22d3ee"/>
+
+  <!-- role clients -->
+  <g font-family="IBM Plex Sans,sans-serif" font-size="10">
+    <rect x="60" y="96" width="120" height="66" rx="12" fill="#111827" stroke="#3b82f6"/>
+    <rect x="72" y="108" width="14" height="14" rx="7" fill="#60a5fa"/>
+    <text x="92" y="119" fill="#e2e8f0" font-weight="600">Admin</text>
+    <rect x="72" y="132" width="90" height="4" rx="2" fill="#475569"/>
+    <rect x="72" y="142" width="60" height="4" rx="2" fill="#334155"/>
+
+    <rect x="60" y="266" width="120" height="66" rx="12" fill="#111827" stroke="#34d399"/>
+    <rect x="72" y="278" width="14" height="14" rx="7" fill="#34d399"/>
+    <text x="92" y="289" fill="#e2e8f0" font-weight="600">Client</text>
+    <rect x="72" y="302" width="80" height="4" rx="2" fill="#475569"/>
+    <rect x="72" y="312" width="52" height="4" rx="2" fill="#334155"/>
+
+    <rect x="460" y="96" width="120" height="66" rx="12" fill="#111827" stroke="#22d3ee"/>
+    <rect x="472" y="108" width="14" height="14" rx="7" fill="#22d3ee"/>
+    <text x="492" y="119" fill="#e2e8f0" font-weight="600">Provider</text>
+    <rect x="472" y="132" width="90" height="4" rx="2" fill="#475569"/>
+    <rect x="472" y="142" width="44" height="4" rx="2" fill="#334155"/>
+
+    <rect x="460" y="266" width="120" height="66" rx="12" fill="#111827" stroke="#60a5fa"/>
+    <rect x="472" y="278" width="14" height="14" rx="7" fill="#93c5fd"/>
+    <text x="492" y="289" fill="#e2e8f0" font-weight="600">Support</text>
+    <rect x="472" y="302" width="70" height="4" rx="2" fill="#475569"/>
+    <rect x="472" y="312" width="90" height="4" rx="2" fill="#334155"/>
+  </g>
+
+  <!-- file attachment + history -->
+  <g font-family="IBM Plex Sans,sans-serif" font-size="10" fill="#94a3b8">
+    <rect x="232" y="318" width="176" height="50" rx="10" fill="#0b1528" stroke="#1e3a8a"/>
+    <rect x="244" y="330" width="22" height="26" rx="4" fill="#1e3a8a" stroke="#60a5fa"/>
+    <path d="M250 340 h10 M250 346 h10" stroke="#bfdbfe" stroke-width="1.4"/>
+    <text x="276" y="340" fill="#e2e8f0">spec-v2.pdf</text>
+    <text x="276" y="354">Delivered &#183; stored in history</text>
+  </g>
+
+  <g font-family="IBM Plex Sans,sans-serif" font-size="10" fill="#94a3b8">
+    <rect x="232" y="88" width="176" height="28" rx="8" fill="#0b1528" stroke="#1e3a8a"/>
+    <circle cx="248" cy="102" r="4" fill="#34d399"/>
+    <text x="260" y="106">Live &#183; 4 roles connected</text>
+  </g>
+</svg>
